@@ -49,7 +49,7 @@ class FetchJeepTest extends FetchJeepTestSupport {
     
     // And: the actual list returned is the same as expected list.
     //    List<Jeep> expected = buildExpected();
-    //   assertThat(response.getBody()).isEqualTo(expected);
+    //    assertThat(response.getBody()).isEqualTo(expected);
   }
 
 
