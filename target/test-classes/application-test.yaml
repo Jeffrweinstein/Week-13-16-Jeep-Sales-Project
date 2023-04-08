@@ -1,8 +1,7 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/jeep
-    username: jeep
-    password: jeep
+    url: jdbc:h2:mem:jeep;mode=MYSQL
+   
 
 logging:
   level:

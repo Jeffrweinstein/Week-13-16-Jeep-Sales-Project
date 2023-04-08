@@ -33,17 +33,31 @@
       <artifactId>lombok</artifactId>
       <optional>true</optional>
     </dependency>
+  <dependency>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-ui</artifactId>
+    <version>1.6.11</version>
+</dependency>
+  <!-- test dependencies ======================================== -->  
+  
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui -->
+    
+    <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
 <dependency>
-    <groupId>org.springdoc</groupId>
-    <artifactId>springdoc-openapi-ui</artifactId>
-    <version>1.6.11</version>
+    <groupId>com.h2database</groupId>
+    <artifactId>h2</artifactId>
+    <scope>test</scope>
 </dependency>
+
+    
+    <!-- https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui -->
+
+
+<!-- database dependencies ======================================== -->
   
   <dependency>
     <groupId>org.springframework.boot</groupId>
