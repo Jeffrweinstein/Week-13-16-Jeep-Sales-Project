@@ -7,13 +7,13 @@ import lombok.Getter;
 
 public class BaseTest {
   @LocalServerPort
-  private int serverPort;
+   private int serverPort;
   
-  @Autowired
-  @Getter
-  private TestRestTemplate restTemplate;
+   @Autowired
+   @Getter
+    private TestRestTemplate restTemplate;
   
-  protected String getBaseUri() {
+    protected String getBaseUri() {
     return String.format("http://localhost:%d/jeeps", serverPort);
-  }
+   }
 }
