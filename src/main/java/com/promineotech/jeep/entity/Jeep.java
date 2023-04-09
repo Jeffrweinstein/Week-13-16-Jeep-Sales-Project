@@ -1,6 +1,7 @@
 package com.promineotech.jeep.entity;
 
 import java.math.BigDecimal;
+import java.util.Comparator;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -20,4 +21,11 @@ public class Jeep {
   private int wheelSize;
   private BigDecimal basePrice;
   
-}
+  @JsonIgnore
+  public Long getModelPK() {
+    return modelPK;
+  }
+
+  
+  }
+  
