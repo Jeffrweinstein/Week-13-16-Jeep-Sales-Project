@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class Jeep {
+public class Jeep implements Comparable<Jeep> {
   private Long modelPK;
   private JeepModel modelId;
   private String trimLevel;
@@ -26,6 +26,16 @@ public class Jeep {
     return modelPK;
   }
 
-  
+  @Override
+  public int compareTo(Jeep that) {
+    // @formatter:off
+    return Comparator
+        .comparing(Jeep::getModelId)
+        .thenComparing(Jeep::getTrimLevel)
+        .thenComparing(Jeep::getNumDoors)
+        .compare(this, that);
   }
+  
+ }
+  
   
