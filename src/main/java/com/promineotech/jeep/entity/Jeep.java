@@ -37,5 +37,3 @@ public class Jeep implements Comparable<Jeep> {
   }
   
  }
-  
-  

@@ -88,4 +88,3 @@ class FetchJeepTest extends FetchJeepTestSupport {
       // @formatter:on
     }
   }
-
