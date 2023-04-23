@@ -36,7 +36,7 @@ public class DefaultJeepSalesService implements JeepSalesService {
       throw new NoSuchElementException(msg);
     }
     
-    Collections.sort(jeeps);
+    
     return jeeps;
    
   }

@@ -34,10 +34,8 @@ public class FetchJeepTestSupport extends BaseTest {
         // @formatter:on
 
  
-      Collections.sort(list);
+     
    return list;      
   }
-  protected void assertErrorMessageValid(Map<String, Object> error, 
-      HttpStatus status) {
-  }
+
 }

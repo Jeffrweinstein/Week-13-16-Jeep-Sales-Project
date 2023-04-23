@@ -11,7 +11,6 @@ import lombok.Data;
 
 @Data
 public class OrderRequest {
-  
   @NotNull
   @Length(max = 30)
   @Pattern(regexp = "[\\w\\s]*")
@@ -24,7 +23,7 @@ public class OrderRequest {
   @Length(max = 30)
   @Pattern(regexp = "[\\w\\s]*")
   private String trim;
- 
+  
   @Positive
   @Min(2)
   @Max(4)
@@ -34,7 +33,7 @@ public class OrderRequest {
   @Length(max = 30)
   @Pattern(regexp = "[\\w\\s]*")
   private String color;
- 
+  
   @NotNull
   @Length(max = 30)
   @Pattern(regexp = "[\\w\\s]*")
@@ -44,6 +43,7 @@ public class OrderRequest {
   @Length(max = 30)
   @Pattern(regexp = "[\\w\\s]*")
   private String tire;
-  
-  private List<@Length(max = 30) @Pattern(regexp = "[\\w\\s]*") String> options;
+
+  private List<@NotNull @Length(max = 30) @Pattern(
+      regexp = "[\\w\\s]*") String> options;
 }
